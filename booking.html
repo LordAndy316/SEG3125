@@ -25,34 +25,91 @@
   <body>
     <div class="container">
       <div class="container">
-        s
+        <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+            <th scope="col">Wednesday</th>
+            <th scope="col">thursday</th>
+            <th scope="col">friday</th>
+            <th scope="col">saturday</th>
+            <th scope="col">sunday</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="row">11am</th>
+            <td>Available</td>
+            <td>Available</td>
+            <td>Unavailable</td>
+            <td>Available</td>
+            <td>Available</td>
+            <td>Unavailable</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <th scope="row">12pm</th>
+            <td>Available</td>
+            <td>Available</td>
+            <td>Unavailable</td>
+            <td>Available</td>
+            <td>Available</td>
+            <td>Unavailable</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <th scope="row">1pm</th>
+            <td>Available</td>
+            <td>Available</td>
+            <td>Unavailable</td>
+            <td>Available</td>
+            <td>Available</td>
+            <td>Unavailable</td>
+            <td>Available</td>
+          </tr>
+        </tbody>
+      </table>
       </div>
-      <div class="dropdown" id="timeDrop">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Times Availible
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">11am</a></li>
-          <li><a class="dropdown-item" href="#">12pm</a></li>
-          <li><a class="dropdown-item" href="#">1pm</a></li>
-          <li><a class="dropdown-item" href="#">2pm</a></li>
-          <li><a class="dropdown-item" href="#">3pm</a></li>
-          <li><a class="dropdown-item" href="#">4pm</a></li>
-          <li><a class="dropdown-item" href="#">5pm</a></li>
-        </ul>
+      <div class="container" style="height:200px;">
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option selected>Day</option>
+        <option value="1">Monday</option>
+        <option value="2">Tuesday</option>
+        <option value="3">Wednesday</option>
+        <option value="1">Thursday</option>
+        <option value="2">Friday</option>
+        <option value="3">Saturday</option>
+        <option value="1">Sunday</option>
+      </select>
+
+      <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+        <option selected>Open this select menu</option>
+        <option value="1">11am</option>
+        <option value="2">12pm</option>
+        <option value="3">1pm</option>
+      </select>
+
+      <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+
       </div>
-      <div class="dropdown" id="typeDrop">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-         Type of Haircut
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Mens (30$)</a></li>
-          <li><a class="dropdown-item" href="#">Mens (30$)</a></li>
-          <li><a class="dropdown-item" href="#">Mens (30$)</a></li>
-          <li><a class="dropdown-item" href="#">Mens (30$)</a></li>
-          <li><a class="dropdown-item" href="#">Mens (30$)</a></li>
-        </ul>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Name</span>
+        <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
       </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="email" aria-label="email" aria-describedby="basic-addon1">
+      </div>
+      <button type="submit" name="button">submit</button>
+
     </div>
 
 
