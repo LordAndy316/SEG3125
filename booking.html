@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>booking</title>
-    <div class="container bg-primary" id="navbar">
-      <div class="container bg-primary">
-          <h1 class="text-center">Joe's Hairdressing</h1>
-      </div>
-
-      <nav class="navbar sticky-top bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand bg-primary text-white" href="index.html">Home</a>
-          <a class="navbar-brand bg-primary text-white"href="about.html">About</a>
-        </div>
-      </nav>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="booking.css">
+  <title>Joe's Hairdressing</title>
+  <div class="container bg-primary" id="navbar">
+    <div class="container bg-primary">
+        <h1 class="display-3 text-center">Joe's Hairdressing</h1>
     </div>
-  </head>
+    <nav class="navbar sticky-top bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand bg-primary text-white lead" href="index.html">Home</a>
+        <a class="navbar-brand bg-primary text-white lead" href="Services.html">Services</a>
+        <a class="navbar-brand bg-primary text-white lead" href="booking.html">Book</a>
+        <a class="navbar-brand bg-primary text-white lead"href="about.html">About</a>
+      </div>
+    </nav>
+  </div>
+</head>
   <body>
-    <div class="container">
-      <div class="container">
-        <table class="table">
+
+    <div class="container bg-light border">
+        <a class="text-left" href="index.html">Go Back</a>
+      <div class="container-lg">
+        <table class="table ">
         <thead>
           <tr>
-            <th scope="col">#</th>
+            <th scope="col">Time</th>
             <th scope="col">Monday</th>
             <th scope="col">Tuesday</th>
             <th scope="col">Wednesday</th>
-            <th scope="col">thursday</th>
-            <th scope="col">friday</th>
-            <th scope="col">saturday</th>
-            <th scope="col">sunday</th>
+            <th scope="col">Thursday</th>
+            <th scope="col">Friday</th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
           </tr>
         </thead>
         <tbody class="table-group-divider">
           <tr>
-            <th scope="row">11am</th>
-            <td>Available</td>
-            <td>Available</td>
-            <td>Unavailable</td>
-            <td>Available</td>
-            <td>Available</td>
-            <td>Unavailable</td>
-            <td>Available</td>
+            <th scope="row">11 AM</th>
+            <td>Open</td>
+            <td>Open</td>
+            <td class="bg-secondary text-light"></td>
+            <td>Open</td>
+            <td>Open</td>
+            <td class="bg-secondary text-light"></td>
+            <td>Open</td>
           </tr>
           <tr>
-            <th scope="row">12pm</th>
-            <td>Available</td>
-            <td>Available</td>
-            <td>Unavailable</td>
-            <td>Available</td>
-            <td>Available</td>
-            <td>Unavailable</td>
-            <td>Available</td>
+            <th scope="row">12 PM</th>
+            <td>Open</td>
+            <td>Open</td>
+            <td class="bg-secondary text-light"></td>
+            <td>Open</td>
+            <td>Open</td>
+            <td class="bg-secondary text-light"></td>
+            <td>Open</td>
           </tr>
           <tr>
-            <th scope="row">1pm</th>
-            <td>Available</td>
-            <td>Available</td>
-            <td>Unavailable</td>
-            <td>Available</td>
-            <td>Available</td>
-            <td>Unavailable</td>
-            <td>Available</td>
+            <th scope="row">1 PM</th>
+            <td>Open</td>
+            <td>Open</td>
+            <td class="bg-secondary text-light"></td>
+            <td>Open</td>
+            <td>Open</td>
+            <td class="bg-secondary text-light"></td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <th scope="row">2 PM</th>
+            <td>Open</td>
+            <td class="bg-secondary text-light"></td>
+            <td class="bg-secondary text-light"></td>
+            <td>Open</td>
+            <td>Open</td>
+            <td class="bg-secondary text-light"></td>
+            <td>Open</td>
           </tr>
         </tbody>
       </table>
@@ -77,22 +92,29 @@
         <option value="1">Monday</option>
         <option value="2">Tuesday</option>
         <option value="3">Wednesday</option>
-        <option value="1">Thursday</option>
-        <option value="2">Friday</option>
-        <option value="3">Saturday</option>
-        <option value="1">Sunday</option>
+        <option value="4">Thursday</option>
+        <option value="5">Friday</option>
+        <option value="6">Saturday</option>
+        <option value="7">Sunday</option>
       </select>
       <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-        <option selected>Open this select menu</option>
-        <option value="1">11am</option>
-        <option value="2">12pm</option>
-        <option value="3">1pm</option>
+        <option selected>Time</option>
+        <option value="1">11 AM</option>
+        <option value="2">12 PM</option>
+        <option value="3">1 PM</option>
+          <option value="3">2 PM</option>
       </select>
       <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-        <option selected>Open this select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
+        <option selected>Select Hairdresser</option>
+        <option value="1">Joe</option>
+        <option value="2">Jessica</option>
+        <option value="3">Will</option>
+      </select>
+      <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+        <option selected>Select service</option>
+        <option value="1">Men's $30</option>
+        <option value="2">Women's $50</option>
+        <option value="3">Children's $20</option>
       </select>
       </div>
       <div class="input-group mb-3">
@@ -103,10 +125,16 @@
         <span class="input-group-text" id="basic-addon1">@</span>
         <input type="text" class="form-control" placeholder="email" aria-label="email" aria-describedby="basic-addon1">
       </div>
-        <a class="navbar-brand bg-primary text-white" href="confirmation.html">Submit</a>
+      <button class="bg-primary text-white"type="submit" name="submitButton" onclick="nextPage()">Book Now</button>
     </div>
 
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script>
+
+        function nextPage(){
+          window.open('confirmation.html', '_self')
+        }
+      </script>
     </body>
 </html>

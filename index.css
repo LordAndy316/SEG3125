@@ -1,4 +1,4 @@
-div{
+.main{
   text-align: center;
 }
 button.headerB{
@@ -23,4 +23,7 @@ p.description{
 }
 .row{
   margin-top: 10px;
+}
+h4{
+  margin-left: 20px;
 }
