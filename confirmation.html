@@ -16,7 +16,7 @@
     <nav class="navbar sticky-top bg-primary">
       <div class="container-fluid">
         <a class="navbar-brand bg-primary text-white lead" href="index.html">Home</a>
-        <a class="navbar-brand bg-primary text-white lead" href="Services.html">Services</a>
+        <a class="navbar-brand bg-primary text-white lead" href="services.html">Services</a>
         <a class="navbar-brand bg-primary text-white lead" href="booking.html">Book</a>
         <a class="navbar-brand bg-primary text-white lead"href="about.html">About</a>
       </div>
@@ -31,21 +31,25 @@
       </div>
       <div class="container text-center bg-light"style="width:50%">
         <h3 class="display-4">Booking Complete</h3>
-        <p class="text-left display-6 lead"><strong>Your appointment is at 12 pm with joe at 123 Ontario street</strong></p>
+        <p class="text-left display-6 lead"><strong>Your appointment is at 12 pm with Joe at 123 Ontario street</strong></p>
         <br>
         <p class="text-left lead">If you need to cancel or change your appointment contact <br/>555 555 5555 </p>
         <label for="basic-url" class="form-label">Enter your card details or pay in person later</label>
         <div class="input-group mb-3">
-          <span class="input-group-text" id="basic-addon3">Card</span>
+          <span class="input-group-text" id="basic-addon3">Card Number</span>
           <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
         </div>
 
         <div class="input-group mb-3">
-          <span class="input-group-text">expiration</span>
-          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          <span class="input-group-text">Expiration Date</span>
+          <input type="text" class="form-control" aria-label="Date">
         </div>
-        <button class="bg-primary text-white"type="submit" name="payButton" onclick="alertPaymentReceived()">Pay now</button>
-        <button class="bg-primary text-white"type="submit" name="noPayButton" onclick="returnToHomePage()">Pay in Person</button>
+        <div class="input-group mb-3">
+          <span class="input-group-text">Name on Card</span>
+          <input type="text" class="form-control" aria-label="Name">
+        </div>
+        <button class="bg-success text-white"type="submit" name="payButton" onclick="alertPaymentReceived()">Pay now</button>
+        <button class="bg-success text-white"type="submit" name="noPayButton" onclick="returnToHomePage()">Pay in Person</button>
       </div>
     </div>
 
